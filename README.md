@@ -1,76 +1,30 @@
-# AWS Projects Portfolio
+# Serverless Architecture on AWS: A Guide
 
-Welcome to my AWS Projects Portfolio! This repository is a showcase of my proficiency in leveraging various AWS services through a collection of well-structured projects. Each project is neatly organized within its dedicated directory, offering insights into my AWS skills and capabilities.
+**Introduction:**
+Welcome to the guide on setting up a serverless architecture on AWS. This README provides an overview of the steps outlined in the blog titled [Serverless Architecture on AWS](https://kevinkiruri.medium.com/serverless-architecture-on-aws-be3d6bd13f9a) by [Kevin Kiruri](https://www.linkedin.com/in/kevin-kiruri/).
 
-## Table of Contents
+## Steps
+1. **Creating an S3 Bucket**: Set up an S3 bucket to store data files.
+2. **Creating a DynamoDB Table**: Establish a DynamoDB table to store inventory data.
+3. **Creating an SNS Topic**: Create an SNS topic for sending notifications.
+4. **Creating Roles for Lambda Functions**: Set up IAM roles for Lambda functions to access S3, DynamoDB, and SNS.
+5. **Creating Lambda Functions**: Develop Lambda functions to read from S3, update DynamoDB, and send SNS notifications.
 
-- [About Me](#about-me)
-- [Projects Overview](#projects-overview)
-- [Getting Started](#getting-started)
-- [Contact Information](#contact-information)
+## Testing
 
-## About Me
+1. **Upload a CSV File**: Upload a CSV file with store, product, and count columns to the S3 bucket.
+2. **Verify Functionality**: Ensure Lambda functions process the file, update DynamoDB, and send notifications for low inventory.
 
-Hello, I'm Kevin Kiruri, and my passion lies in cloud computing and AWS. This portfolio is a testament to my ability to design, construct, and manage AWS solutions for diverse use cases. Dive into each project to gain a deeper understanding of my approach to AWS architecture.
+## Clean Up
 
-## Projects Overview
+1. **Delete Resources**: Remove uploaded objects, S3 bucket, SNS topic, DynamoDB table, Lambda functions, and associated IAM roles.
 
-Explore the diverse range of projects featured in this portfolio:
+## Using CloudFormation
+You can create a CloudFormation template to create the above infrasture in the click of a button.
 
-### Project 1: Data Visualization with AWS QuickSight and S3
+## Conclusion
 
-- **Description:** This project focuses on visualizing data using AWS QuickSight sourced from AWS S3.
-- **Technologies Used:** AWS S3, AWS QuickSight.
-- [Link to Project README](/Data%20Visualization%20with%20QuickSight%20and%20S3/README.md)
-
-### Project 2: S3 Static Website
-
-- **Description:** Hosting a static website on AWS S3.
-- **Technologies Used:** AWS S3.
-- [Link to Project README](/S3%20Static%20Website/README.md)
-
-### Project 3: CI-CD on AWS
-
-- **Description:** Cretating a CI- CD pipeline on AWS using AWS CodePipeline
-- **Technologies Used:** AWS CodePipeline, GitHub.
-- [Link to Project README](/CI-CD%20Pipeline/README.md)
-
-### Project 4: Scheduling EC2 Instances for Off-Hours
-
-- **Description:** Starting and stopping EC2 instances based on a time schedule, including IaC
-- **Technologies Used:** AWS Lambda, AWS EventBridge, AWS EC2, AWS IAM, Terraform
-- [Link to Project README](/Lambda/Start-Stop-EC2/README.md)
-
-### Project 5: Serverless Web App Development
-
-- **Description:** Deploying a serverless Web-App
-- **Technologies Used:** AWS Amplify, AWS Lambda, API Gateway, DynamoDB, AWS IAM
-- [Link to Project README](/Amplify/README.md)
-
-### Project 6: 12weeksworkshop
-
-- **Description:** A series of AWS projects under the [12 Weeks Workshop Challenge](https://12weeksworkshops.com/), organized by [AWS USER GROUP YAOUNDE](https://www.linkedin.com/company/aws-user-group-yaounde/)
-- **Technologies Used:** AWS Amplify, AWS Lambda, API Gateway, DynamoDB, AWS IAM
-- [Link to Project README](/12weeksworkshop/README.md)
-
-### Project 7: Inventory Management
-
-- **Description:** Deploying serverless archicture to inform when inventory levels are low
-- **Technologies Used:** AWS Lambda, DynamoDB, AWS IAM, AWS S3, AWS SNS
-- [Link to Project README](/inventory/README.md)
-
-## Getting Started
-
-If any of these projects pique your interest, simply navigate to the respective project directories and follow the comprehensive instructions provided in their README files for setup and utilization.
-
-## Contact Information
-
-Should you have any inquiries, feedback, or wish to explore potential collaboration opportunities, please don't hesitate to get in touch:
-
-- **LinkedIn:** [Kevin Kiruri's LinkedIn](https://www.linkedin.com/in/kevin-kiruri/)
-- **Twitter:** [Kevin Kiruri's Twitter](https://twitter.com/kevquinone)
-
-Thank you for visiting my AWS Projects Portfolio! I trust you'll find these projects not only informative but also inspiring.
+Implementing serverless architecture on AWS enables efficient handling of various business use cases, such as inventory management. By leveraging AWS services like S3, DynamoDB, SNS, and Lambda, you can automate processes and streamline workflows. Serverless architecture empowers systems to respond dynamically to events, enhancing agility and scalability in cloud environments.
 
 ---
 
